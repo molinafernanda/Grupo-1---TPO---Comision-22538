@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Panda</title>    
+    <link rel="shortcut icon" href="./imagenes/huella.png">     
+    <script src="https://kit.fontawesome.com/529028533f.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body class="grid-container">
+    
+    <header class="header">
+                  <!--logo-->
+        <img src="./imagenes/logo.jpg" align="left" alt="logo pet shop panda"  width="65"  height="65">
+        <!--<i class="fa-solid fa-paw"></i>-->
+        <h1>Pet Shop Panda</h1>                  
+        
+    </header>
+
+     
+    
+    <nav class="navbar">
+
+        <br>
+        <div>
+            <a href="./index.html"><h4>Home</h4></a>
+            <a href="./nosotros.html"><h4>Nosotros</h4></a>        
+            <a href="./productos.html"><h4>Productos</h4></a>        
+            <a href="./contacto.html"><h4>Contacto</h4></a>
+        </div>
+    </nav>
+
+    <aside class="sidebar">        
+        <div>
+            <p align="justify center"><h2> </h2>
+                <br>
+                <img src="./imagenes/eukanubaPublicidad.png" alt="eukanuba">
+            </p>
+            <br>
+
+            <p align="justify center"><h2> </h2>
+                <br>
+                <img src="./imagenes/proPlanPublicidad.png" alt="pro plan"> 
+            </p>
+
+            <br>
+            <p align="justify center"><h2></h2>
+                <br>
+                <img src="./imagenes/purinaPublicidad.png" alt="purina">
+            </p>
+            <br>       
+        </div>
+    </aside>
+
+    <article class="main">
+        
+        <br>
+        <p>
+            <div align="left">
+                <h3>Para comunicarse con nosotros por favor complete el siguiente formulario y presione ENVIAR</h3>
+                <br>
+                
+                 
+                <!-- <div align="justify"> -->
+                <div id="formulario">
+                    <form name="fvalida" method="POST">
+                        <table>
+                            <tr>
+                               <td>Nombre: </td>
+                               <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+                            </tr>
+                            <tr>
+                                <td>Apellido: </td>
+                                <td><input type="text" name="apellido" size="30" maxlength="100"></td>
+                            </tr>
+                            <tr>
+                                <td>Teléfono:</td>
+                                <td><input type="text" id="telefono" name="telefono" maxlength="10"></td>
+                            </tr>
+                            <tr>
+                                <td>e-mail: </td>
+                                <td><input type="email" name="email" id="email" required="required"/></td>
+                            </tr>                   
+                            <tr>
+                               <td>Interés:</td>
+                               <td>
+                                    <select name=interes>
+                                        <option value="Elegir">Elegir
+                                        <option value="Comercial">Contacto comercial
+                                        <option value="Clientes">Atención al cliente
+                                        <option value="Proveedores">Contacto de proveedores
+                                    </select>
+                               </td>
+                            </tr>
+                            <tr>
+                                <td>Comentario: </td>
+                                <td><textarea rows="5" cols="40" name="comentario"></textarea>
+                            </tr>
+                            <tr>
+                               <td colspan="2" align="center"><input type="button" value="Enviar" onclick="validarform()"></td>
+                            </tr>
+                        </table>
+                    </form>    
+                </div>        
+                <!-- </div> -->
+            </div>
+            <br>
+
+            <div align="left">
+                <p><h3>Horarios de Atención</p></h3>
+            </div>           
+            <div align="left">
+                <p><h5>Lunes a viernes de 9 a 19 horas / sábados de 9 a 14 horas.</p></h5>
+            </div>    
+            <br>
+
+            <div align="left">
+                <p><h3>¿Dónde estamos?</p></h3>
+            </div>            
+           
+        </p>
+        
+        <br>
+        <div align="center">    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.1950137990357!2d-58.478933399999995!3d-34.5739318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb665c4e67b79%3A0xae518427a7413468!2sMendoza%204612%2C%20C1431CID%20CABA!5e0!3m2!1ses-419!2sar!4v1666142302968!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <br><br>
+        <p><h4>
+            Dirección:  Mendoza 4612, C1431CID CABA   -   Teléfono:  011  4521-3000
+        </p></h4>
+
+        <br>
+        
+    </article>
+
+    <footer class="footer">
+
+        <br>
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+
+        <br><br>
+        <h6>Derechos reservados 2022</h6>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
